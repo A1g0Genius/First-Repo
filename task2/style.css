@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageContainer {
+  width: 80%;
+}
+
+.pageContainer .title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+.name,
+.gender,
+.physic,
+.math,
+.english,
+.total {
+  grid-column: span 2;
+}
+
+.nameFilter,
+.genderFilter,
+.physicFilter,
+.mathFilter,
+.englishFilter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.nameSearch,
+.genderSearch,
+.physicSearch,
+.mathSearch,
+.englishSearch {
+  padding: 0.2rem;
+}
+
+input {
+  width: 100%;
+}
+
+.head,
+.headTotal {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.headTotal {
+  margin-top: 4.5rem;
+}

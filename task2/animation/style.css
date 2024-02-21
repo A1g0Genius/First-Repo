@@ -1,0 +1,116 @@
+* {
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.pageContainer {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.top {
+  width: 20rem;
+  height: 20rem;
+  margin-bottom: 3rem;
+  position: relative;
+  border: 0.4rem solid #00aeff;
+  border-radius: 50%;
+}
+.top img {
+  width: auto;
+  height: auto;
+  color: #00aeff;
+}
+.line1,
+.line2 {
+  width: 1rem;
+  background-color: #00aeff;
+  height: 80%;
+  position: absolute;
+
+  transform-origin: center;
+}
+.line1 {
+  top: 10%;
+  left: 47%;
+}
+
+.line1.animate {
+  animation: animate1 3s infinite linear;
+}
+
+.line2 {
+  top: 10%;
+  left: 48%;
+  transform: rotate(90deg);
+}
+
+.line2.animate {
+  animation: animate2 3s infinite linear;
+}
+
+@keyframes animate1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(450deg);
+  }
+}
+
+.down {
+  display: flex;
+}
+
+.on-btn,
+.off-btn,
+.speed1,
+.speed2,
+.speed3 {
+  margin-right: 0.8rem;
+  padding: 0.8rem;
+  border-radius: 50%;
+  width: 1.7rem;
+  height: 1.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.on-btn {
+  background-color: #00f829;
+}
+
+.off-btn {
+  background-color: #ff0000;
+}
+
+.speed1,
+.speed2,
+.speed3 {
+  background-color: #fff;
+}

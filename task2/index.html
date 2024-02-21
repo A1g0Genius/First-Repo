@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="main.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="pageContainer">
+        <div class="title">Student Details</div>
+        <div class="table">
+          <div class="name">
+            <div class="nameFilter">
+              <input type="text" id="nameText" />
+              <button class="nameSearch">Search</button>
+            </div>
+            <div class="head">Name</div>
+            <div class="nameData"></div>
+          </div>
+          <div class="gender">
+            <div class="genderFilter" style="margin-top: 1.5rem"></div>
+            <div class="head">Gender</div>
+            <div class="genderData"></div>
+          </div>
+          <div class="physic">
+            <div
+              class="physicFilter"
+              style="grid-template-columns: 1fr 1fr 2fr"
+            >
+              <input
+                type="number"
+                id="lsPhy"
+                placeholder="low"
+                min="0"
+                max="100"
+              />
+              <input
+                type="number"
+                id="gtPhy"
+                placeholder="high"
+                min="0"
+                max="100"
+              />
+              <!-- <button class="physicSearch">Search</button> -->
+            </div>
+            <div class="head">Physics</div>
+            <div class="physicData"></div>
+          </div>
+          <div class="math">
+            <div class="mathFilter" style="grid-template-columns: 1fr 1fr 2fr">
+              <input
+                type="number"
+                id="lsMath"
+                placeholder="low"
+                min="0"
+                max="100"
+              />
+              <input
+                type="number"
+                id="gtMath"
+                placeholder="high"
+                min="0"
+                max="100"
+              />
+              <button class="mathSearch">Search</button>
+            </div>
+            <div class="head">Maths</div>
+            <div class="mathData"></div>
+          </div>
+          <div class="english">
+            <div
+              class="englishFilter"
+              style="grid-template-columns: 1fr 1fr 2fr"
+            >
+              <input
+                type="number"
+                id="lsEng"
+                placeholder="low"
+                min="0"
+                max="100"
+              />
+              <input
+                type="number"
+                id="gtEng"
+                placeholder="high"
+                min="0"
+                max="100"
+              />
+              <button class="englishSearch">Search</button>
+            </div>
+            <div class="head">English</div>
+            <div class="englishData"></div>
+          </div>
+          <!-- <div class="total">
+            <div class="headTotal">Total</div>
+            <div class="totalData"></div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
